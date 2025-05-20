@@ -57,3 +57,15 @@ Esempi di esecuzione possono essere:
 - `npm start 2 apa` che restituisce vero.
 - `npm start 3 pippo 1` che produce la stringa `p...`.
 - `npm start 4 pippo` che restituisce il conteggio `p: 3, i: 1, o: 1`.
+
+### 🧪 Testing
+
+Questo progetto usa [Jest](https://jestjs.io/) framework per gli unit test.
+
+per runnare la **test suite** e vedere la **coverage** digitare sul terminale
+
+```bash
+npm test
+```
+
+Il coverage report sarà salvato nella cartella `tests/coverage`.

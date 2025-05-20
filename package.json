@@ -4,6 +4,7 @@
     "description": "A simple string manipulation CLI for basic operations.",
     "main": "index.js",
     "scripts": {
+        "test": "jest --coverage --verbose --coverageDirectory=tests/coverage",
         "start": "node index.js"
     },
     "keywords": [
@@ -25,5 +26,8 @@
     "homepage": "https://github.com/FlavioVentu/LAB2#readme",
     "engines": {
         "node": ">=18"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
     }
 }
