@@ -11,6 +11,7 @@ Attualmente quelle supportate sono:
 
 ### 📜 Prerequisites
 
+- **Node.js** ≥ `v18`
 - **npm** (viene installato di default con Node.js)
 - [**Git**](https://git-scm.com/) (raccomandato)
 
@@ -40,7 +41,7 @@ npm ci
 
 ### 🎮 Usage
 
-Per lanciare la CLI digitare nella directory principale del progetto `node index.js` aggiungendo i seguenti parametri:
+Per lanciare la CLI digitare nella directory principale del progetto `npm start` aggiungendo i seguenti parametri:
 
 - `<numero_funzione>` = un numero che corrisponde alle seguenti operazioni :
   - 1 --> `reverseString`.
@@ -51,7 +52,8 @@ Per lanciare la CLI digitare nella directory principale del progetto `node index
 - `[parametro_aggiuntivo]` = indispensabile per la funzione `truncateString` mentre non ha nessun effetto sulle altre operazioni.
 
 Esempi di esecuzione possono essere:
-- `node index.js 1 pippo` che produce la stringa `oppip`
-- `node index.js 2 apa` che restituisce vero.
-- `node index.js 3 pippo 1` che produce la stringa `p...`.
-- `node index.js 4 pippo` che restituisce il conteggio `p: 3, i: 1, o: 1`
+
+- `npm start 1 pippo` che produce la stringa `oppip`
+- `npm start 2 apa` che restituisce vero.
+- `npm start 3 pippo 1` che produce la stringa `p...`.
+- `npm start 4 pippo` che restituisce il conteggio `p: 3, i: 1, o: 1`.
