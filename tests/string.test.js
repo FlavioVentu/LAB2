@@ -37,7 +37,7 @@ describe("Test per l'operatore truncateString", () => {
         expect(truncateString("apa", 4)).toBe("apa");
     });
 
-    test.skip('check apa and -1 to equal ...', () => { // This test is skipped because the behavior is not what we want
+    test('check apa and -1 to equal ...', () => { // This test is skipped because the behavior is not what we want
         expect(truncateString("apa", -1)).toBe("...");
     });
 });
