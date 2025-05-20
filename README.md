@@ -69,3 +69,7 @@ npm test
 ```
 
 Il coverage report sarà salvato nella cartella `tests/coverage`.
+
+### ♾️ CI pipeline
+
+Questo progetto include una **GitHub Actions workflow** perla CI, che viene runnato ad ogni pull request sul ramo principale (main). Esegue la test suite, genera un report e lo salva come artefatto per poter essere visionato facilmente. Per scaricare questo artefatto andare nella sezione [Actions tab](https://github.com/FlavioVentu/LAB2/actions) su GitHub.
