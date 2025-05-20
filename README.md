@@ -1,30 +1,59 @@
-# Labo-String: CLI per Utilità su Stringhe
+### 🎯 Description
 
-Questo progetto fornisce una base per una semplice Command-Line Interface (CLI) Node.js che offre diverse utilità per la manipolazione di stringhe.
+Questo progetto fornisce una semplice Command-Line Interface (CLI) Node.js che offre diverse utilità per la manipolazione di stringhe.
 
-## Nota Importante per lo Studente - Setup Iniziale del Progetto
+Attualmente quelle supportate sono:
 
-Benvenuto/a a `labo-string`!
+- `reverseString` = Inverte una stringa.
+- `isPalindrome` = Verifica se una stringa è palindroma (ignorando maiuscole/minuscole e spazi).
+- `truncateString` = Tronca una stringa a una lunghezza massima, aggiungendo "..." se necessario.
+- `countCharacters` = Conta i caratteri di una stringa.
 
-Questo repository è un **template di partenza** per il tuo laboratorio valutato. Come avrai modo di leggere nelle istruzioni del laboratorio, una parte fondamentale del tuo lavoro iniziale (Esercizio 1) consisterà nell'analizzare attentamente la struttura e la configurazione corrente di questo progetto.
+### 📜 Prerequisites
 
-**Potresti notare che alcuni aspetti della configurazione iniziale – inclusa questa stessa documentazione (`README.md`), il file `package.json` e la gestione dei file da ignorare (`.gitignore`) – sono stati volutamente lasciati incompleti o potrebbero non seguire tutte le best practice per un progetto Node.js.**
+- **Node.js** ≥ `v18`
+- **npm** (viene installato di default con Node.js)
+- [**Git**](https://git-scm.com/) (raccomandato)
 
-Il tuo primo compito sarà proprio quello di identificare queste aree di miglioramento e apportare le necessarie correzioni e completamenti, come dettagliato nelle istruzioni del laboratorio, per portare il progetto a uno standard qualitativo superiore.
+Per verificare che `node` e `git` siano installati correttamente digitare sul terminale
 
-Buona analisi e buon lavoro!
+```bash
+node -v
+```
 
-## Funzionalità Principali (Previste)
+```bash
+git -v
+```
 
-* Inversione di una stringa.
-* Verifica se una stringa è palindroma.
-* Troncamento di una stringa a una lunghezza massima specificata.
-* Conteggio delle occorrenze di ciascun carattere in una stringa.
+### 🔧 Installation
 
-## Installazione e Avvio
+Per Git, **cloniamo** il progetto localmente e **installiamo le dipendenza** con il gestore di pacchetti npm
 
-*(Questa sezione dovrà essere completata dallo studente come parte dell'Esercizio 1, includendo i comandi per installare le dipendenze ed eseguire l'applicazione e i test).*
+```bash
+git clone https://github.com/FlavioVentu/LAB2.git
+cd LAB2
+npm ci
+```
 
----
+ℹ️ Se non stai usando un sistema di versionamento, puoi scaricare il progetto manualmente con il bottone "**Download ZIP**" nella sezione **Code**. Dopo aver estratto lo zip, navigare dentro lo zip e procedere con i passi citati in precedenza.
 
-*Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
+(⚠️ il progetto senza git non sarà automaticamente aggiornato)
+
+### 🎮 Usage
+
+Per lanciare la CLI digitare nella directory principale del progetto `npm start` aggiungendo i seguenti parametri:
+
+- `<numero_funzione>` = un numero che corrisponde alle seguenti operazioni :
+  - 1 --> `reverseString`.
+  - 2 --> `isPalindrome`.
+  - 3 --> `truncateString`.
+  - 4 --> `countCharacters`.
+- `<stringa_input>` = la stringa che vogliamo manipolare.
+- `[parametro_aggiuntivo]` = indispensabile per la funzione `truncateString` mentre non ha nessun effetto sulle altre operazioni.
+
+Esempi di esecuzione possono essere:
+
+- `npm start 1 pippo` che produce la stringa `oppip`
+- `npm start 2 apa` che restituisce vero.
+- `npm start 3 pippo 1` che produce la stringa `p...`.
+- `npm start 4 pippo` che restituisce il conteggio `p: 3, i: 1, o: 1`.
